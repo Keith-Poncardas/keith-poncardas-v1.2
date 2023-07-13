@@ -1,0 +1,569 @@
+<!-- 2023 Keith Poncardas Version 1.2 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/custom.css">
+
+  <!-- Media Query CSS -->
+  <link rel="stylesheet" href="/assets/css/media.css">
+
+  <!-- Animation CSS -->
+  <link rel="stylesheet" href="/assets/css/animation.css">
+
+  <!-- Minified Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Float Panel JS -->
+  <script src="/assets/js/float-panel.js"></script>
+
+  <!-- Google Fonts API -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Keith Poncardas</title>
+</head>
+
+<body>
+  <!-- Photos Toast Message -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+  <!-- Navigation Bar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark p-4 navbar-container fixed-top">
+    <div class="container navbar-sub-container">
+      <!-- Text Logo -->
+      <a class="navbar-brand fw-bold text-logo" href="#">KEITH PONCARDAS</a>
+
+      <!-- Navbar Toggle Button (Hamburger Icon) -->
+      <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon menu-lines"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse justify-content-end navlinks-container" id="navbarNav">
+        <ul class="navbar-nav navlinks-sub-container">
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#">
+              <i class='bx bx-home-alt-2'></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#about">
+              <i class='bx bx-user'></i>
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#projects">
+              <i class='bx bx-folder'></i>
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#photos">
+              <i class='bx bx-image-alt'></i>
+              Photos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#music">
+              <i class='bx bx-music'></i>
+              Music
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container mt-3 p-2 main-content-container">
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-white py-5 hero-section d-flex align-items-center">
+      <div class="container text-center hero-content">
+        <div class="wrapper animated-text-container">
+          <svg class="desktop-text">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              KEITH PONCARDAS
+            </text>
+          </svg>
+          <svg class="mobile-text">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              KEITH P.
+            </text>
+          </svg>
+        </div>
+        <p class="text-break hero-subtitle">I'm a Software Developer & Record Producer.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class=" py-4 about-section">
+      <div class="container about-content">
+        <h1 class="about-title text-center mb-4">ABOUT</h1>
+        <div class="row slideanim">
+          <div class="col-md-6 about-image-container  text-center py-3">
+            <img src="/assets/media/img/about-img.jpeg" alt="Keith Poncardas" class="img-fluid about-image"
+              title="Keith Poncardas">
+          </div>
+          <div class="col-md-6 about-text-container  d-grid align-items-center">
+            <p class="about-subtitle text-break">
+              Hello! I'm <strong>Keith Ralph Robles Poncardas</strong>, a 20-year-old from Cavite City, Philippines. My
+              passions are
+              music recording and coding. I love capturing sounds, mixing tracks, and producing music. I'm also
+              fascinated by coding and enjoy creating software solutions. In the future, I aim to be a successful
+              software engineer and record producer, combining my technical skills and artistic interests. Thank you for
+              getting to know a bit about me and my aspirations!
+            </p>
+            <button type="button" class="modal-button rounded-3" data-bs-toggle="modal" data-bs-target="#aboutModal">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal (Read More) -->
+      <div class="modal fade readmore-modal-content" id="aboutModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable readmore-modal-sub-container">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ABOUT ME</h5>
+              <button type="button" class="btn-close modal-button d-flex align-items-center" data-bs-dismiss="modal"
+                aria-label="Close"><i class='bx bx-x'></i></button>
+            </div>
+            <div class="modal-body">
+              <!-- Add your scrollable content here -->
+              <figure class="figure">
+                <img src="/assets/media/img/about-img.jpeg" class="figure-img img-fluid mb-0 rounded-1" alt="...">
+                <figcaption class="figure-caption readmore-modal-text">2023 Captured By Trisha Poncardas</figcaption>
+              </figure>
+              <p class="readmore-modal-text">
+                Hello! I'm <strong>Keith Ralph Robles Poncardas</strong>, a 20-year-old from Cavite City, Philippines.
+                My passions are music recording and coding. I love capturing sounds, mixing tracks, and producing music.
+                I'm also fascinated by coding and enjoy creating software solutions. In the future, I aim to be a
+                successful software engineer and record producer, combining my technical skills and artistic interests.
+                Thank you for getting to know a bit about me and my aspirations!
+              </p>
+              <p class="readmore-modal-text">
+                Music recording and coding are two passions that truly define me. I find immense joy in capturing
+                sounds, mixing tracks, and producing music. There's something magical about the process of transforming
+                raw audio into a harmonious composition. Music allows me to express myself creatively and connect with
+                others on a deep emotional level.
+              </p>
+              <p class="readmore-modal-text">
+                On the other hand, coding has always intrigued me. I'm fascinated by the ability to create software
+                solutions that can solve real-world problems and enhance people's lives. The world of coding is like a
+                puzzle waiting to be solved, and I thoroughly enjoy the process of building elegant and efficient
+                solutions.
+              </p>
+              <p class="readmore-modal-text">
+                My dream is to combine my technical skills as a software engineer with my artistic interests as a record
+                producer. I envision myself creating innovative music production software or platforms that empower
+                aspiring musicians to unleash their creativity. I strive to contribute to the ever-evolving landscape of
+                technology and music, pushing the boundaries and bringing new experiences to the world.
+              </p>
+              <p class="readmore-modal-text">
+                In my journey towards becoming a successful software engineer and record producer, I'm constantly
+                learning and exploring new avenues. I embrace challenges with enthusiasm, knowing that they offer
+                valuable opportunities for growth and development.
+              </p>
+              <p class="readmore-modal-text">
+                Thank you for taking the time to learn a bit about me and my aspirations. I'm excited about the future
+                and the possibilities it holds. Let's stay connected and continue to make meaningful contributions to
+                the world together!
+              </p>
+
+              <!-- End of scrollable content -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="modal-footer-close-button rounded-2" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-4 mt-5">
+      <div class="container">
+        <h2 class="projects-title text-center mb-5">PROJECTS</h2>
+        <div class="row slideanim">
+
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card project-card bg-transparent border-0">
+              <img src="/assets/media/img/project-1.png" class="card-img-top card-image" alt="Project 1 : Connectify PH"
+                title="Connectify PH">
+              <div class="card-body project-card-text-content">
+                <h5 class="card-title project-title">CONNECTIFY PH</h5>
+                <ul class="list-inline list-containe project-subtitle">
+                  <li class="list-inline-item me-1">HTML</li>
+                  <li class="list-inline-item me-1">BOOTSTRAP 5</li>
+                  <li class="list-inline-item me-1">CSS</li>
+                  <li class="list-inline-item">JQUERY</li>
+                </ul>
+                <p class="card-text text-break project-subtitle">
+                  Simple Social Media Platform.
+                </p>
+                <a href="https://connectifyph.netlify.app/" target="_blank" class="project-button rounded-2">Live
+                  Preview</a>
+                <a href="https://github.com/Keith-Poncardas/connectify.git" target="_blank"
+                  class="project-button-2 rounded-2">Source</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card project-card bg-transparent border-0">
+              <img src="/assets/media/img/project-2.png" class="card-img-top card-image"
+                alt="Project 2 : The Coffee Movement" title="The Coffee Movement">
+              <div class="card-body project-card-text-content">
+                <h5 class="card-title project-title">THE COFFEE MOVEMENT</h5>
+                <ul class="list-inline list-containe project-subtitle">
+                  <li class="list-inline-item me-1">HTML</li>
+                  <li class="list-inline-item me-1">BOOTSTRAP 5</li>
+                  <li class="list-inline-item me-1">CSS</li>
+                  <li class="list-inline-item">JS</li>
+                </ul>
+                <p class="card-text text-break project-subtitle">
+                  Simple Coffee Shop Website.
+                </p>
+                <a href="https://thecoffeemovement.netlify.app/" target="_blank" class="project-button rounded-2">Live
+                  Preview</a>
+                <a href="https://github.com/Keith-Poncardas/the-coffee-movement.git" target="_blank"
+                  class="project-button-2 rounded-2">Source</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card project-card bg-transparent border-0">
+              <img src="/assets/media/img/project-3.png" class="card-img-top card-image" alt="Project 3 : Nature"
+                title="Nature">
+              <div class="card-body project-card-text-content">
+                <h5 class="card-title project-title">NATURE</h5>
+                <ul class="list-inline list-containe project-subtitle">
+                  <li class="list-inline-item me-1">HTML</li>
+                  <li class="list-inline-item me-1">BOOTSTRAP 5</li>
+                  <li class="list-inline-item me-1">CSS</li>
+                  <li class="list-inline-item">JS</li>
+                </ul>
+                <p class="card-text text-break project-subtitle">
+                  Simple Nature Website.
+                </p>
+                <a href="https://naturebykeith.netlify.app/" target="_blank" class="project-button rounded-2">Live
+                  Preview</a>
+                <a href="https://github.com/Keith-Poncardas/nature.git" target="_blank"
+                  class="project-button-2 rounded-2">Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photos Section -->
+    <section id="photos" class="py-4 mt-5 photos-section">
+      <div class="container">
+        <h2 class="photos-title text-center mb-5">PHOTOS</h2>
+        <div class="row photo-card-sub-container slideanim">
+          <div class="col-md-4 photo-card-container">
+            <div class="card mb-3 bg-transparent border-0 photo-card-content">
+              <a data-bs-toggle="modal" data-bs-target="#photo1Modal">
+                <img src="/assets/media/img/photo-1.jpg" class="card-img-top" alt="Photo 1 : Daang Bakal"
+                  title="Daang Bakal">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title photo-title">DAANG BAKAL</h5>
+                <p class="card-text photo-subtitle"><i class='bx bx-map'></i> Brgy. Panikihan, Gumaca Quezon.</p>
+              </div>
+            </div>
+
+            <!-- Photo 1 Modal -->
+            <div class="modal fade photos-modal-content" id="photo1Modal" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable photos-modal-sub-container">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAANG BAKAL</h5>
+                    <button type="button" class="btn-close d-flex align-items-center photos-modal-button"
+                      data-bs-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Add your scrollable content here -->
+                    <figure class="figure">
+                      <figcaption class="figure-caption photos-modal-text"><img src="/assets/media/img/photo-1.jpg"
+                          class="card-img-top rounded-2" alt="Photo 1 : Daang Bakal" title="Daang Bakal">2023 Photo By
+                        Keith Poncardas.</figcaption>
+                    </figure>
+
+                    <p class="photos-modal-text">
+                      The photograph captures a picturesque landscape in Panikihan, Gumaca, Quezon. In the foreground,
+                      there is a railroad track that extends into the distance. The track is made of dark metal and
+                      appears to be well-maintained. The rails are parallel and disappear into the vanishing point,
+                      creating a sense of depth and perspective.
+                    </p>
+                    <p class="photos-modal-text">
+                      As the track recedes, it passes through lush greenery on either side. Tall trees and vibrant
+                      vegetation frame the railway, adding a touch of natural beauty to the scene. The foliage might
+                      vary depending on the season, showcasing different shades of green or possibly featuring other
+                      colors if it's autumn.
+                    </p>
+                    <p class="photos-modal-text">
+                      The focal point of the image is the captivating sunset that paints the sky in a symphony of
+                      colors. The sun is positioned on the horizon, casting warm and golden hues across the scene. The
+                      sky above the sunset exhibits a gradient of oranges, pinks, and purples, creating a breathtaking
+                      backdrop for the railroad.
+                    </p>
+                    <p class="photos-modal-text">
+                      The interplay of light and shadow adds depth and texture to the landscape. The setting sun casts
+                      long shadows along the railroad tracks and surrounding foliage, emphasizing the contours and forms
+                      present in the scene.
+                    </p>
+                    <p class="photos-modal-text">
+                      Overall, the image likely portrays a serene and idyllic moment, capturing the harmony between
+                      nature, the man-made railroad, and the beauty of the setting sun in Panikihan, Gumaca, Quezon.
+                    </p>
+                    <!-- End of scrollable content -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="photos-modal-footer-close-button rounded-2"
+                      data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3 bg-transparent border-0 photo-card-content">
+              <a data-bs-toggle="modal" data-bs-target="#photo2Modal">
+                <img src="/assets/media/img/photo-2.jpg" class="card-img-top" alt="Photo 2 : Kastilyo" title="Kastilyo">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title photo-title">KASTILYO</h5>
+                <p class="card-text photo-subtitle"><i class='bx bx-map'></i> Kutang San Diego, Gumaca Quezon.</p>
+              </div>
+
+              <!-- Photo 2 Modal -->
+              <div class="modal fade photos-modal-content" id="photo2Modal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable photos-modal-sub-container">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">KASTILYO</h5>
+                      <button type="button" class="btn-close d-flex align-items-center photos-modal-button"
+                        data-bs-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Add your scrollable content here -->
+                      <figure class="figure">
+                        <figcaption class="figure-caption photos-modal-text"><img src="/assets/media/img/photo-2.jpg"
+                            class="card-img-top rounded-2" alt="Photo 2 : Kastilyo" title="Kastilyo">2023 Photo By
+                          Keith Poncardas.</figcaption>
+                      </figure>
+
+                      <p class="photos-modal-text">
+                        Kastilyo or Kutang San Diego, the fortress was constructed sometime
+                        in the 1680s or 1690s. It was due to the suggestion and leadership of a Franciscan priest named
+                        Fray Francisco Coste that the fortress was constructed in the town. Its main purpose was to
+                        guard the town from marauding pirates attacking towns in Lamon Bay. Aside from that, it also
+                        served as the primary defense of the town against the invading Dutch in the 1700s.
+
+                      </p>
+                      <p class="photos-modal-text">
+                        As a defensive structure, the fortress still has some of its cannons intact. Aside from that, it
+                        was
+                        said that there used to be an existing tunnel between the fortress and the San Diego de Alcala
+                        Church (Cathedral). However, its entrance, the well located in the fort's platform, is now
+                        covered (for safety purposes). Historically, there were four fortresses built in the different
+                        towns
+                        in the bay area of the province, however, due to the acts of God and the destructiveness of man,
+                        only the Kutang San Diego and Iskong Bantay in Atimonan remained to this day
+                      </p>
+                      <p class="photos-modal-text">
+                        Today, the San Diego de Alcala Fortress stands as a silent reminder of Spain's former
+                        dominion of the town. Some of its cannons are still pointed out to the bay waiting for an attack
+                        that would probably never come. Although maintained, the fortress has evident signs of
+                        restorations and "upgrades". The most evident of which is the metal gate that blocks anyone
+                        from easily getting in and out of the fortress.
+
+                      </p>
+                      <p class="photos-modal-text">
+                        Lucky for us, the caretaker of the fortress was in the area during our visit. He told me that
+                        the
+                        gates are required to protect the National Treasure from people who might vandalize it. That
+                        reminds me of the crazy people who used the historical Iskong Bantay in Atimonan, Quezon
+                        as their toilet. Despite these additions, Kutang San Diego is still a must-see and visit place
+                        in
+                        Gumaca
+                      </p>
+                      <p class="photos-modal-text">
+                        Source : <a
+                          href="http://www.thebackpackadventures.com/2016/05/quezon-san-diego-de-alcala-fortress.html"
+                          target="_blank">
+                          http://www.thebackpackadventures.com/2016/05/quezon-san-diego-de-alcala-fortress.html
+                        </a>
+                      </p>
+                      <!-- End of scrollable content -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="photos-modal-footer-close-button rounded-2"
+                        data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3 bg-transparent border-0 photo-card-content">
+              <a data-bs-toggle="modal" data-bs-target="#photo3Modal">
+                <img src="/assets/media/img/photo-3.jpg" class="card-img-top" alt="Photo 3 : Tulay" title="Tulay">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title photo-title">TULAY</h5>
+                <p class="card-text photo-subtitle"><i class='bx bx-map'></i> Brgy. Bagong Buhay, Gumaca, Quezon.</p>
+              </div>
+
+              <!-- Photo 3 Modal -->
+              <div class="modal fade photos-modal-content" id="photo3Modal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable photos-modal-sub-container">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">TULAY</h5>
+                      <button type="button" class="btn-close d-flex align-items-center photos-modal-button"
+                        data-bs-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Add your scrollable content here -->
+                      <figure class="figure">
+                        <figcaption class="figure-caption photos-modal-text"><img src="/assets/media/img/photo-3.jpg"
+                            class="card-img-top rounded-2" alt="Photo 3 : Tulay" title="Tulay">2023 Photo By
+                          Keith Poncardas.</figcaption>
+                      </figure>
+
+                      <p class="photos-modal-text">
+                        The Train Bridge in Barangay Bagong Buhay, Gumaca, Quezon, presents a nostalgic scene that
+                        echoes the rich history of railway transportation in the Philippines. Constructed in the 1970s
+                        or 1980s by the Philippine National Railways (PNR), this bridge served as a vital link
+                        connecting Manila to Bicol. Locally referred to as the "Bicol Express Line," it holds a special
+                        place in the hearts of people who once relied on its efficient services.
+                      </p>
+                      <p class="photos-modal-text">
+                        However, the passage of time has left its mark on the bridge, as evident from the faint traces
+                        of rust that adorn its weathered structure. The corrosion adds a touch of character, hinting at
+                        the countless journeys taken across this iconic landmark. Though the bridge may bear the signs
+                        of age, its historical significance and the memories associated with it remain resilient.
+                      </p>
+                      <p class="photos-modal-text">
+                        Regrettably, the once vibrant Bicol Express Line came to a halt in 2015 due to track issues
+                        encountered along its route. While it has been several years since the last train passed over
+                        this bridge, the captivating image serves as a reminder of a bygone era, evoking a sense of
+                        wistfulness for the days when the train was a lifeline for commuters and a symbol of progress.
+
+                      </p>
+                      <p class="photos-modal-text">
+                        As the sun casts a warm glow over the bridge, it stands as a testament to the ingenuity of its
+                        builders and the aspirations of a nation striving to connect its regions. The photo of this
+                        train bridge in Barangay Bagong Buhay, Gumaca, Quezon, encapsulates the juxtaposition of history
+                        and nature, capturing the essence of a time gone by while offering a glimpse into the untold
+                        stories that unfolded along its tracks.
+                      </p>
+                      <!-- End of scrollable content -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="photos-modal-footer-close-button rounded-2"
+                        data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music-section py-4 mt-5 mb-5">
+      <div class="container">
+        <h2 class="music-main-title text-center mb-5">MUSIC</h2>
+        <div class="row slideanim">
+          <div class="col-md-6">
+            <div class="card border-0 bg-transparent">
+              <div class="card-body">
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkitkat.poncardas%2Fvideos%2F1926534574356803%2F&show_text=false&width=560&t=0"
+                    width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen="true"></iframe>
+                </div>
+                <h5 class="card-title mt-2 music-title">BULONG</h5>
+                <p class="card-subtitle music-subtitle">Cover By Keith Poncardas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 bg-transparent">
+              <div class="card-body">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/oVNlroZRq_E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+                <h5 class="card-title mt-2 music-title">SA NGALAN NG PAG-IBIG</h5>
+                <p class="card-subtitle music-subtitle">Cover By Keith Poncardas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section pt-2">
+      <div class="container">
+        <p class="copyright text-center"><span>&copy;</span> 2023 Keith Poncardas. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="/assets/js/custom.js"></script>
+
+  <!-- Minified Bootstrap 5 JS -->
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

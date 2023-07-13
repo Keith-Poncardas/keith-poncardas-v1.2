@@ -1,0 +1,66 @@
+/* <<<<< Media Query >>>>> */
+
+/* --- Universal Below 991px --- */
+@media (max-width: 991px) {
+  /* Navigation Bar Section */
+  .navbar-container .navbar-sub-container .navlinks-container {
+    /* --- Navlinks Container Border Bottom --- */
+    border-bottom: 2px solid #aaaaaa;
+    padding-bottom: 10px;
+  }
+  .navbar-container .navbar-sub-container .navlinks-container .navlinks-sub-container .nav-item .nav-link i {
+    /* --- Navlinks Icon (Show) --- */
+    display: inline;
+    margin-right: 10px;
+  }
+  .navbar-container .navbar-sub-container .navlinks-container .navlinks-sub-container .nav-item .nav-link::before {
+    /* --- Disable Hover Effects ---*/
+    content: none;
+  }
+  .main-content-container .hero-section .hero-content .animated-text-container .desktop-text {
+    /* --- Animated Text Desktop (Hidden) --- */
+    display: none;
+  }
+  .main-content-container .hero-section .hero-content .animated-text-container .mobile-text {
+    /* --- Animated Text Mobile (Showed) */
+    display: inline;
+  }
+}
+
+/* --- Laptop Screen --- */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  
+}
+
+/* --- Tablet Screen --- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Navigation Bar Section */
+  .navbar-container .navbar-sub-container .text-logo {
+    /* --- Text Logo --- */
+    font-size: 25px;
+  }
+}
+
+/* --- Mobile Screen --- */
+@media only screen and (max-width: 767px) {
+  /* Navigation Bar Section */
+  .navbar-container .navbar-sub-container .text-logo {
+    /* --- Text Logo --- */
+    font-size: 19px;
+  }
+  .navbar-container .navbar-sub-container .menu-button .menu-lines {
+    /* --- Menu Button --- */
+    font-size: 15.5px;
+  }
+  .main-content-container .hero-section .hero-content .animated-text-container .mobile-text text {
+    /* --- Animated Text Mobile --- */
+    font-size: 80px;
+    letter-spacing: 7px;
+  }
+  .main-content-container .hero-section .hero-content .hero-subtitle {
+    /* --- Hero Subtitle --- */
+    font-size: 16px;
+  }
+}
+
+

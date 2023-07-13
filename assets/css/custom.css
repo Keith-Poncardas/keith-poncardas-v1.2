@@ -1,0 +1,308 @@
+/* Custom CSS */
+
+/* <<<<< Universal Section >>>>> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Agdasima', sans-serif;
+}
+
+/* <<<<< Body Section >>>>> */
+body {
+  background-color: #202020 !important;
+}
+
+/* <<<<< Navigation Bar Section >>>>>> */
+.navbar-container {
+  background-color: #202020;
+
+}
+.navbar-container .navbar-sub-container .text-logo {
+  /* --- Text Logo --- */
+  font-size: 22px;
+  color: #fff;
+}
+.navbar-container .navbar-sub-container .navlinks-container .navlinks-sub-container .nav-item .nav-link {
+  /* --- Navigation Links --- */
+  font-size: 17px;
+}
+.navbar-container .navbar-sub-container .navlinks-container .navlinks-sub-container .nav-item .nav-link i {
+  /* Navlinks Icon (Hide) */
+  display: none;
+}
+.navbar-container .navbar-sub-container .menu-button {
+  /* Menu Button (Border Removed) */
+  border: none;
+  outline: none;
+}
+.navbar-container .navbar-sub-container .menu-button:focus {
+  /* Menu Button (Border Removed) */
+  outline: none;
+  box-shadow: none;
+}
+
+/* <<<<< Main Content Section >>>>> */
+body .main-content-container {
+  /* --- Main Content Container --- */
+  margin-top: 100px !important;
+}
+/* ===== Hero Section ===== */
+.main-content-container .hero-section {
+  /* --- Hero Section --- */
+  height: 42pc;
+}
+.main-content-container .hero-section .hero-content .hero-subtitle {
+  /* --- Hero Subtitle --- */
+  color: #aaaaaa ;
+}
+.main-content-container .hero-section .hero-content .animated-text-container .mobile-text {
+  /* --- Animated Text Mobile (Hidden) --- */
+  display: none;
+}
+/* ===== About Me Section ===== */
+.main-content-container .about-section {
+  /* --- About Section --- */
+  height: auto;
+}
+.main-content-container .about-section .about-content .about-image-container .about-image {
+  /* --- About Image --- */
+  width: auto;
+  height: 290px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+.main-content-container .about-section .about-content .about-title {
+  /* --- About Title --- */
+  color: #fff;
+  font-size: 2em;
+}
+.main-content-container .about-section .about-content .about-subtitle {
+  /* --- About Subtitle --- */
+  color: #fff;
+}
+.main-content-container .about-section .about-content .about-text-container .modal-button {
+  /* --- Modal Button --- */
+  width: 100px;
+  padding: 5px;
+  color: #fff;
+  background-color: #fca311;
+  border: none;
+  font-weight: bold;
+}
+.main-content-container .about-section .about-content .about-text-container .modal-button:hover {
+  /* --- Modal Button Hover --- */
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.main-content-container .about-section .about-content .about-text-container .modal-button:active {
+  /* --- Modal Button Active --- */
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content {
+  /* --- Modal Content --- */
+  background-color: #202020;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-header .modal-title {
+  /* --- Modal Title --- */
+  color: #fff;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-header .modal-button {
+  /* --- Modal Close X Button --- */
+  background-image: none;
+  color: #fff;
+  font-size: 25px;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-body .readmore-modal-text {
+  /* --- Readmore Modal Text --- */
+  color: #aaaaaa;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-header {
+  border-bottom: 2px solid #fca311;
+  /* --- Modal Header --- */
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-footer {
+  /* --- Modal Footer --- */
+  border-top: 2px solid #fca311;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-footer .modal-footer-close-button {
+  /* --- Modal Footer Close Button --- */
+  padding: 5px 15px 5px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-footer .modal-footer-close-button:hover {
+  /* --- Modal Footer Close Button Hover */
+  padding: 5px 15px 5px;
+  color: #fff;
+  background-color: #fca311;
+  border: 1px solid #202020;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-footer .modal-footer-close-button:active {
+  /* --- Modal Footer Close Button Active --- */
+  padding: 5px 15px 5px;
+  color: #fff;
+  background-color: #fca311;
+  border: none;
+}
+
+
+/* ===== Projects Section ===== */
+.main-content-container .projects-section {
+  /* --- Projects Section --- */
+  height: auto;
+}
+.main-content-container .projects-section .projects-title {
+  /* --- Projects Title --- */
+  color: #fff;
+  font-size: 2em;
+}
+.main-content-container .projects-section .project-card .project-card-text-content .project-title {
+  /* --- Project Title --- */
+  color: #fff;
+}
+.main-content-container .projects-section .project-card .project-card-text-content .project-subtitle {
+  /* --- Project Subtitle --- */
+  color: #aaaaaa;
+}
+.main-content-container .projects-section .project-card .project-card-text-content .project-button {
+  /* --- Project Button --- */
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #fca311;
+  border: 1px solid #202020;
+}
+.main-content-container .projects-section .project-card .project-card-text-content .project-button-2 {
+  /* --- Project Button 2 --- */
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #fff;
+}
+.main-content-container .projects-section .project-card .project-card-text-content .project-button:hover {
+  /* --- Project Button Hover --- */
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.main-content-container .projects-section .project-card .project-card-text-content .project-button-2:hover {
+  /* --- Project Button 2 Hover */
+  color: #000;
+  background-color: #fff;
+  border: none;
+}
+.main-content-container .projects-section .project-card .project-card-text-content .project-button:active {
+  /* --- Project Button Active */
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.main-content-container .projects-section .project-card .project-card-text-content .project-button-2:active {
+  /* --- Project Button 2 Active --- */
+  color: #000;
+  background-color: #fff;
+  border: none;
+}
+
+/* ===== Photos Section ===== */
+.main-content-container .photos-section .container .photos-title {
+  /* --- Photos Title --- */
+  color: #fff;
+  font-size: 2em;
+}
+.main-content-container .photos-section .container .photo-card-sub-container .photo-card-content .card-body .photo-title {
+  /* --- Photo Title --- */
+  color: #fff;
+}
+.main-content-container .photos-section .container .photo-card-sub-container .photo-card-content a {
+  /* --- Image Cursor Pointer --- */
+  cursor: pointer;
+}
+.main-content-container .photos-section .container .photo-card-sub-container .photo-card-content .card-body .photo-subtitle {
+  /* --- Photo Subtitle --- */
+  color: #aaaaaa;
+}
+.main-content-container .photos-modal-sub-container .modal-content {
+  /* --- Photos Modal Background --- */
+  background-color: #202020;
+}
+.main-content-container .photos-modal-sub-container .modal-content .modal-header {
+  /* --- Modal Header --- */
+  color: #fff;
+}
+.main-content-container .photos-modal-sub-container .modal-content .photos-modal-button {
+  /* --- Photos Exit Button ---- */
+  background-image: none;
+  font-size: 25px;
+  color: #fff;
+}
+.main-content-container .photos-modal-sub-container .modal-content .modal-body .photos-modal-text {
+  /* --- Modal Text --- */
+  color: #aaaaaa;
+}
+.main-content-container .photos-modal-sub-container .modal-content .modal-header {
+  /* --- Modal Header Border Bottom --- */
+  border-bottom: 2px solid #fca311;
+}
+.main-content-container .photos-modal-sub-container .modal-content .modal-footer {
+  /* --- Modal Footer Border Top --- */
+  border-top: 2px solid #fca311;
+}
+.main-content-container .photos-modal-sub-container .modal-content .modal-footer .photos-modal-footer-close-button {
+  /* -- Photos Modal Footer Button ---  */
+  padding: 5px 15px 5px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+.main-content-container .photos-modal-sub-container .modal-content .modal-footer .photos-modal-footer-close-button:hover {
+  /* --- Photos Modal Footer Button Hover --- */
+  padding: 5px 15px 5px;
+  color: #fff;
+  background-color: #fca311;
+  border: 1px solid #202020;
+}
+.main-content-container .photos-modal-sub-container .modal-content .modal-footer .photos-modal-footer-close-button:active {
+  /* --- Photos Modal Footer Button Active --- */
+  padding: 5px 15px 5px;
+  color: #fff;
+  background-color: #fca311;
+  border: none;
+}
+
+/* ===== Music Section ===== */
+.main-content-container .music-section .container .music-main-title {
+  /* --- Music Main Title --- */
+  color: #fff;
+  font-size: 2em;
+}
+.main-content-container .music-section .container .row .col-md-6 .card .card-body .music-title {
+  /* --- Music Title --- */
+  color: #fff;
+}
+.main-content-container .music-section .container .row .col-md-6 .card .card-body .music-subtitle {
+  /* --- Music Subtitle ---   */
+  color: #aaaaaa;
+}
+
+/* ===== Footer Section ===== */
+.main-content-container .footer-section .container .copyright {
+  /* --- Copyright --- */
+  color: #aaaaaa;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.main-content-container .footer-section .container .copyright span {
+  /* --- Copy Symbol --- */
+  font-size: 20px;
+}
+
+
+
+
