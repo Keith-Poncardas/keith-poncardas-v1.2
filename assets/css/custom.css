@@ -23,6 +23,9 @@ body {
   font-size: 22px;
   color: #fff;
 }
+.navbar-container .navbar-sub-container .text-logo .fname {
+  color: #fca311;
+}
 .navbar-container .navbar-sub-container .navlinks-container .navlinks-sub-container .nav-item .nav-link {
   /* --- Navigation Links --- */
   font-size: 17px;
