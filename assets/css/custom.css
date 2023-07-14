@@ -83,6 +83,9 @@ body .main-content-container {
   /* --- About Subtitle --- */
   color: #fff;
 }
+.main-content-container .about-section .about-content .about-subtitle .fullname {
+  color: #fca311;
+}
 .main-content-container .about-section .about-content .about-text-container .modal-button {
   /* --- Modal Button --- */
   width: 100px;
@@ -119,6 +122,10 @@ body .main-content-container {
 .main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-body .readmore-modal-text {
   /* --- Readmore Modal Text --- */
   color: #aaaaaa;
+}
+.main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-body .readmore-modal-text strong {
+  /* --- Readmore Modal Text --- */
+  color: #fca311;
 }
 .main-content-container .about-section .readmore-modal-content .readmore-modal-sub-container .modal-content .modal-header {
   border-bottom: 2px solid #fca311;

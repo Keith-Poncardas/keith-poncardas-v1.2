@@ -41,16 +41,20 @@ svg {
 svg text {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
-	stroke: #365FA0;
+	stroke: #fca311;
 	font-size: 100px;
   letter-spacing: 9px;
 }
+
+/* rgba(255,255,255,1) */
+/* #365FA0 */
+
 @keyframes stroke {
 	0%   {
-		fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
+		fill: rgba(255,255,255,0); stroke: #fca311;
 		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
 	}
-	70%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); }
+	70%  {fill: rgba(255,255,255,0); stroke: #fca311; }
 	80%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
 	100% {
 		fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
