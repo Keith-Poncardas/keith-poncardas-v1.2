@@ -15,6 +15,9 @@
   <!-- Animation CSS -->
   <link rel="stylesheet" href="/assets/css/animation.css">
 
+  <!-- Hover CSS -->
+  <link rel="stylesheet" href="/assets/css/hover-min.css">
+
   <!-- Minified Bootstrap 5 CSS -->
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
@@ -280,7 +283,7 @@
         <h2 class="photos-title text-center mb-5">PHOTOS</h2>
         <div class="row photo-card-sub-container slideanim">
           <div class="col-md-4 photo-card-container">
-            <div class="card mb-3 bg-transparent border-0 photo-card-content">
+            <div class="card mb-3 bg-transparent border-0 photo-card-content hvr-grow">
               <a data-bs-toggle="modal" data-bs-target="#photo1Modal">
                 <img src="/assets/media/img/photo-1.jpg" class="card-img-top" alt="Photo 1 : Daang Bakal"
                   title="Daang Bakal">
@@ -348,7 +351,7 @@
 
           </div>
           <div class="col-md-4">
-            <div class="card mb-3 bg-transparent border-0 photo-card-content">
+            <div class="card mb-3 bg-transparent border-0 photo-card-content hvr-grow">
               <a data-bs-toggle="modal" data-bs-target="#photo2Modal">
                 <img src="/assets/media/img/photo-2.jpg" class="card-img-top" alt="Photo 2 : Kastilyo" title="Kastilyo">
               </a>
@@ -356,80 +359,79 @@
                 <h5 class="card-title photo-title">KASTILYO</h5>
                 <p class="card-text photo-subtitle"><i class='bx bx-map'></i> Kutang San Diego, Gumaca Quezon.</p>
               </div>
+            </div>
+            <!-- Photo 2 Modal -->
+            <div class="modal fade photos-modal-content" id="photo2Modal" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable photos-modal-sub-container">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">KASTILYO</h5>
+                    <button type="button" class="btn-close d-flex align-items-center photos-modal-button"
+                      data-bs-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Add your scrollable content here -->
+                    <figure class="figure">
+                      <figcaption class="figure-caption photos-modal-text"><img src="/assets/media/img/photo-2.jpg"
+                          class="card-img-top rounded-2" alt="Photo 2 : Kastilyo" title="Kastilyo">2023 Photo By
+                        Keith Poncardas.</figcaption>
+                    </figure>
 
-              <!-- Photo 2 Modal -->
-              <div class="modal fade photos-modal-content" id="photo2Modal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable photos-modal-sub-container">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">KASTILYO</h5>
-                      <button type="button" class="btn-close d-flex align-items-center photos-modal-button"
-                        data-bs-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
-                    </div>
-                    <div class="modal-body">
-                      <!-- Add your scrollable content here -->
-                      <figure class="figure">
-                        <figcaption class="figure-caption photos-modal-text"><img src="/assets/media/img/photo-2.jpg"
-                            class="card-img-top rounded-2" alt="Photo 2 : Kastilyo" title="Kastilyo">2023 Photo By
-                          Keith Poncardas.</figcaption>
-                      </figure>
+                    <p class="photos-modal-text">
+                      Kastilyo or Kutang San Diego, the fortress was constructed sometime
+                      in the 1680s or 1690s. It was due to the suggestion and leadership of a Franciscan priest named
+                      Fray Francisco Coste that the fortress was constructed in the town. Its main purpose was to
+                      guard the town from marauding pirates attacking towns in Lamon Bay. Aside from that, it also
+                      served as the primary defense of the town against the invading Dutch in the 1700s.
 
-                      <p class="photos-modal-text">
-                        Kastilyo or Kutang San Diego, the fortress was constructed sometime
-                        in the 1680s or 1690s. It was due to the suggestion and leadership of a Franciscan priest named
-                        Fray Francisco Coste that the fortress was constructed in the town. Its main purpose was to
-                        guard the town from marauding pirates attacking towns in Lamon Bay. Aside from that, it also
-                        served as the primary defense of the town against the invading Dutch in the 1700s.
+                    </p>
+                    <p class="photos-modal-text">
+                      As a defensive structure, the fortress still has some of its cannons intact. Aside from that, it
+                      was
+                      said that there used to be an existing tunnel between the fortress and the San Diego de Alcala
+                      Church (Cathedral). However, its entrance, the well located in the fort's platform, is now
+                      covered (for safety purposes). Historically, there were four fortresses built in the different
+                      towns
+                      in the bay area of the province, however, due to the acts of God and the destructiveness of man,
+                      only the Kutang San Diego and Iskong Bantay in Atimonan remained to this day
+                    </p>
+                    <p class="photos-modal-text">
+                      Today, the San Diego de Alcala Fortress stands as a silent reminder of Spain's former
+                      dominion of the town. Some of its cannons are still pointed out to the bay waiting for an attack
+                      that would probably never come. Although maintained, the fortress has evident signs of
+                      restorations and "upgrades". The most evident of which is the metal gate that blocks anyone
+                      from easily getting in and out of the fortress.
 
-                      </p>
-                      <p class="photos-modal-text">
-                        As a defensive structure, the fortress still has some of its cannons intact. Aside from that, it
-                        was
-                        said that there used to be an existing tunnel between the fortress and the San Diego de Alcala
-                        Church (Cathedral). However, its entrance, the well located in the fort's platform, is now
-                        covered (for safety purposes). Historically, there were four fortresses built in the different
-                        towns
-                        in the bay area of the province, however, due to the acts of God and the destructiveness of man,
-                        only the Kutang San Diego and Iskong Bantay in Atimonan remained to this day
-                      </p>
-                      <p class="photos-modal-text">
-                        Today, the San Diego de Alcala Fortress stands as a silent reminder of Spain's former
-                        dominion of the town. Some of its cannons are still pointed out to the bay waiting for an attack
-                        that would probably never come. Although maintained, the fortress has evident signs of
-                        restorations and "upgrades". The most evident of which is the metal gate that blocks anyone
-                        from easily getting in and out of the fortress.
-
-                      </p>
-                      <p class="photos-modal-text">
-                        Lucky for us, the caretaker of the fortress was in the area during our visit. He told me that
-                        the
-                        gates are required to protect the National Treasure from people who might vandalize it. That
-                        reminds me of the crazy people who used the historical Iskong Bantay in Atimonan, Quezon
-                        as their toilet. Despite these additions, Kutang San Diego is still a must-see and visit place
-                        in
-                        Gumaca
-                      </p>
-                      <p class="photos-modal-text">
-                        Source : <a
-                          href="http://www.thebackpackadventures.com/2016/05/quezon-san-diego-de-alcala-fortress.html"
-                          target="_blank">
-                          http://www.thebackpackadventures.com/2016/05/quezon-san-diego-de-alcala-fortress.html
-                        </a>
-                      </p>
-                      <!-- End of scrollable content -->
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="photos-modal-footer-close-button rounded-2"
-                        data-bs-dismiss="modal">Close</button>
-                    </div>
+                    </p>
+                    <p class="photos-modal-text">
+                      Lucky for us, the caretaker of the fortress was in the area during our visit. He told me that
+                      the
+                      gates are required to protect the National Treasure from people who might vandalize it. That
+                      reminds me of the crazy people who used the historical Iskong Bantay in Atimonan, Quezon
+                      as their toilet. Despite these additions, Kutang San Diego is still a must-see and visit place
+                      in
+                      Gumaca
+                    </p>
+                    <p class="photos-modal-text">
+                      Source : <a
+                        href="http://www.thebackpackadventures.com/2016/05/quezon-san-diego-de-alcala-fortress.html"
+                        target="_blank">
+                        http://www.thebackpackadventures.com/2016/05/quezon-san-diego-de-alcala-fortress.html
+                      </a>
+                    </p>
+                    <!-- End of scrollable content -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="photos-modal-footer-close-button rounded-2"
+                      data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-3 bg-transparent border-0 photo-card-content">
+            <div class="card mb-3 bg-transparent border-0 photo-card-content hvr-grow">
               <a data-bs-toggle="modal" data-bs-target="#photo3Modal">
                 <img src="/assets/media/img/photo-3.jpg" class="card-img-top" alt="Photo 3 : Tulay" title="Tulay">
               </a>
@@ -437,58 +439,57 @@
                 <h5 class="card-title photo-title">TULAY</h5>
                 <p class="card-text photo-subtitle"><i class='bx bx-map'></i> Brgy. Bagong Buhay, Gumaca, Quezon.</p>
               </div>
+            </div>
+            <!-- Photo 3 Modal -->
+            <div class="modal fade photos-modal-content" id="photo3Modal" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable photos-modal-sub-container">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">TULAY</h5>
+                    <button type="button" class="btn-close d-flex align-items-center photos-modal-button"
+                      data-bs-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Add your scrollable content here -->
+                    <figure class="figure">
+                      <figcaption class="figure-caption photos-modal-text"><img src="/assets/media/img/photo-3.jpg"
+                          class="card-img-top rounded-2" alt="Photo 3 : Tulay" title="Tulay">2023 Photo By
+                        Keith Poncardas.</figcaption>
+                    </figure>
 
-              <!-- Photo 3 Modal -->
-              <div class="modal fade photos-modal-content" id="photo3Modal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable photos-modal-sub-container">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">TULAY</h5>
-                      <button type="button" class="btn-close d-flex align-items-center photos-modal-button"
-                        data-bs-dismiss="modal" aria-label="Close"><i class='bx bx-x'></i></button>
-                    </div>
-                    <div class="modal-body">
-                      <!-- Add your scrollable content here -->
-                      <figure class="figure">
-                        <figcaption class="figure-caption photos-modal-text"><img src="/assets/media/img/photo-3.jpg"
-                            class="card-img-top rounded-2" alt="Photo 3 : Tulay" title="Tulay">2023 Photo By
-                          Keith Poncardas.</figcaption>
-                      </figure>
+                    <p class="photos-modal-text">
+                      The Train Bridge in Barangay Bagong Buhay, Gumaca, Quezon, presents a nostalgic scene that
+                      echoes the rich history of railway transportation in the Philippines. Constructed in the 1970s
+                      or 1980s by the Philippine National Railways (PNR), this bridge served as a vital link
+                      connecting Manila to Bicol. Locally referred to as the "Bicol Express Line," it holds a special
+                      place in the hearts of people who once relied on its efficient services.
+                    </p>
+                    <p class="photos-modal-text">
+                      However, the passage of time has left its mark on the bridge, as evident from the faint traces
+                      of rust that adorn its weathered structure. The corrosion adds a touch of character, hinting at
+                      the countless journeys taken across this iconic landmark. Though the bridge may bear the signs
+                      of age, its historical significance and the memories associated with it remain resilient.
+                    </p>
+                    <p class="photos-modal-text">
+                      Regrettably, the once vibrant Bicol Express Line came to a halt in 2015 due to track issues
+                      encountered along its route. While it has been several years since the last train passed over
+                      this bridge, the captivating image serves as a reminder of a bygone era, evoking a sense of
+                      wistfulness for the days when the train was a lifeline for commuters and a symbol of progress.
 
-                      <p class="photos-modal-text">
-                        The Train Bridge in Barangay Bagong Buhay, Gumaca, Quezon, presents a nostalgic scene that
-                        echoes the rich history of railway transportation in the Philippines. Constructed in the 1970s
-                        or 1980s by the Philippine National Railways (PNR), this bridge served as a vital link
-                        connecting Manila to Bicol. Locally referred to as the "Bicol Express Line," it holds a special
-                        place in the hearts of people who once relied on its efficient services.
-                      </p>
-                      <p class="photos-modal-text">
-                        However, the passage of time has left its mark on the bridge, as evident from the faint traces
-                        of rust that adorn its weathered structure. The corrosion adds a touch of character, hinting at
-                        the countless journeys taken across this iconic landmark. Though the bridge may bear the signs
-                        of age, its historical significance and the memories associated with it remain resilient.
-                      </p>
-                      <p class="photos-modal-text">
-                        Regrettably, the once vibrant Bicol Express Line came to a halt in 2015 due to track issues
-                        encountered along its route. While it has been several years since the last train passed over
-                        this bridge, the captivating image serves as a reminder of a bygone era, evoking a sense of
-                        wistfulness for the days when the train was a lifeline for commuters and a symbol of progress.
-
-                      </p>
-                      <p class="photos-modal-text">
-                        As the sun casts a warm glow over the bridge, it stands as a testament to the ingenuity of its
-                        builders and the aspirations of a nation striving to connect its regions. The photo of this
-                        train bridge in Barangay Bagong Buhay, Gumaca, Quezon, encapsulates the juxtaposition of history
-                        and nature, capturing the essence of a time gone by while offering a glimpse into the untold
-                        stories that unfolded along its tracks.
-                      </p>
-                      <!-- End of scrollable content -->
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="photos-modal-footer-close-button rounded-2"
-                        data-bs-dismiss="modal">Close</button>
-                    </div>
+                    </p>
+                    <p class="photos-modal-text">
+                      As the sun casts a warm glow over the bridge, it stands as a testament to the ingenuity of its
+                      builders and the aspirations of a nation striving to connect its regions. The photo of this
+                      train bridge in Barangay Bagong Buhay, Gumaca, Quezon, encapsulates the juxtaposition of history
+                      and nature, capturing the essence of a time gone by while offering a glimpse into the untold
+                      stories that unfolded along its tracks.
+                    </p>
+                    <!-- End of scrollable content -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="photos-modal-footer-close-button rounded-2"
+                      data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
