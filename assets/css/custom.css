@@ -300,6 +300,7 @@ body .main-content-container {
 .main-content-container .music-section .container .row .col-md-6 .card .card-body .music-subtitle {
   /* --- Music Subtitle ---   */
   color: #aaaaaa;
+  font-size: 14.5px !important;
 }
 
 /* ===== Footer Section ===== */
