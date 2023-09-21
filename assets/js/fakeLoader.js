@@ -10,7 +10,7 @@
 
         var settings = $.extend({
             targetClass: 'fakeLoader',
-            timeToHide: 3500,
+            timeToHide: 3900,
             bgColor: '#2ecc71',
             spinner: 'spinner2'
         }, options);
